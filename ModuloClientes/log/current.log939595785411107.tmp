@@ -1,0 +1,137 @@
+07-10-2016 17:02:25.536 [main] INFO  OpticasApplication Starting OpticasApplication on ServerTest with PID 1700 (/home/test/ModuloClientes/opticas-0.0.1-SNAPSHOT.jar started by test in /home/test/ModuloClientes)
+07-10-2016 17:02:25.574 [main] INFO  OpticasApplication No active profile set, falling back to default profiles: default
+07-10-2016 17:02:26.195 [main] INFO  AnnotationConfigEmbeddedWebApplicationContext Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@24245514: startup date [Fri Oct 07 17:02:26 UTC 2016]; root of context hierarchy
+07-10-2016 17:02:26.198 [background-preinit] INFO  Version HV000001: Hibernate Validator 5.2.4.Final
+07-10-2016 17:02:28.694 [main] INFO  TomcatEmbeddedServletContainer Tomcat initialized with port(s): 8081 (http)
+07-10-2016 17:02:28.714 [main] INFO  StandardService Starting service Tomcat
+07-10-2016 17:02:28.716 [main] INFO  StandardEngine Starting Servlet Engine: Apache Tomcat/8.5.4
+07-10-2016 17:02:28.846 [localhost-startStop-1] INFO  [/] Initializing Spring embedded WebApplicationContext
+07-10-2016 17:02:28.846 [localhost-startStop-1] INFO  ContextLoader Root WebApplicationContext: initialization completed in 2651 ms
+07-10-2016 17:02:29.045 [localhost-startStop-1] INFO  ServletRegistrationBean Mapping servlet: 'dispatcherServlet' to [/]
+07-10-2016 17:02:29.050 [localhost-startStop-1] INFO  FilterRegistrationBean Mapping filter: 'characterEncodingFilter' to: [/*]
+07-10-2016 17:02:29.051 [localhost-startStop-1] INFO  FilterRegistrationBean Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+07-10-2016 17:02:29.051 [localhost-startStop-1] INFO  FilterRegistrationBean Mapping filter: 'httpPutFormContentFilter' to: [/*]
+07-10-2016 17:02:29.051 [localhost-startStop-1] INFO  FilterRegistrationBean Mapping filter: 'requestContextFilter' to: [/*]
+07-10-2016 17:02:29.627 [main] INFO  RequestMappingHandlerAdapter Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@24245514: startup date [Fri Oct 07 17:02:26 UTC 2016]; root of context hierarchy
+07-10-2016 17:02:29.791 [main] INFO  RequestMappingHandlerMapping Mapped "{[/agregarCliente],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.opticas.controladores.MainController.clientes()
+07-10-2016 17:02:29.792 [main] INFO  RequestMappingHandlerMapping Mapped "{[/modificaCliente],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.opticas.controladores.MainController.modificaCliente(java.lang.String,org.springframework.ui.Model)
+07-10-2016 17:02:29.792 [main] INFO  RequestMappingHandlerMapping Mapped "{[/examenes],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.opticas.controladores.MainController.examenes(java.lang.String,org.springframework.ui.Model)
+07-10-2016 17:02:29.792 [main] INFO  RequestMappingHandlerMapping Mapped "{[/agregarAnteojo],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.opticas.controladores.MainController.agregarAnteojo()
+07-10-2016 17:02:29.792 [main] INFO  RequestMappingHandlerMapping Mapped "{[/ventas],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.opticas.controladores.MainController.ventas()
+07-10-2016 17:02:29.792 [main] INFO  RequestMappingHandlerMapping Mapped "{[/anteojosIniciales],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.opticas.controladores.MainController.anteojosIniciales(java.lang.String,org.springframework.ui.Model)
+07-10-2016 17:02:29.792 [main] INFO  RequestMappingHandlerMapping Mapped "{[/antecedentes],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.opticas.controladores.MainController.antecedentes(java.lang.String,org.springframework.ui.Model)
+07-10-2016 17:02:29.792 [main] INFO  RequestMappingHandlerMapping Mapped "{[/buscarClientes],methods=[POST],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public java.lang.String com.opticas.controladores.MainController.buscarClientes(java.lang.String)
+07-10-2016 17:02:29.792 [main] INFO  RequestMappingHandlerMapping Mapped "{[/agregarContacto],methods=[POST],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public java.lang.String com.opticas.controladores.MainController.agregarContacto(java.lang.String)
+07-10-2016 17:02:29.793 [main] INFO  RequestMappingHandlerMapping Mapped "{[/agregarCliente],methods=[POST],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public java.lang.String com.opticas.controladores.MainController.agregarCliente(java.lang.String)
+07-10-2016 17:02:29.793 [main] INFO  RequestMappingHandlerMapping Mapped "{[/agregarRx],methods=[POST],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public java.lang.String com.opticas.controladores.MainController.agregarRx(java.lang.String)
+07-10-2016 17:02:29.793 [main] INFO  RequestMappingHandlerMapping Mapped "{[/obtenerRecetas],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.opticas.controladores.MainController.recetas(java.lang.String)
+07-10-2016 17:02:29.793 [main] INFO  RequestMappingHandlerMapping Mapped "{[/agregarAnteojos],methods=[POST],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public java.lang.String com.opticas.controladores.MainController.agregarAnteojos(java.lang.String)
+07-10-2016 17:02:29.798 [main] INFO  RequestMappingHandlerMapping Mapped "{[/error],methods=[],params=[],headers=[],consumes=[],produces=[text/html],custom=[]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+07-10-2016 17:02:29.799 [main] INFO  RequestMappingHandlerMapping Mapped "{[/error],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+07-10-2016 17:02:29.805 [main] INFO  WebMvcConfigurerAdapter Adding welcome page: class path resource [static/index.html]
+07-10-2016 17:02:29.827 [main] INFO  SimpleUrlHandlerMapping Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+07-10-2016 17:02:30.108 [main] INFO  SimpleUrlHandlerMapping Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+07-10-2016 17:02:30.108 [main] INFO  SimpleUrlHandlerMapping Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+07-10-2016 17:02:30.229 [main] INFO  SimpleUrlHandlerMapping Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+07-10-2016 17:02:31.461 [main] INFO  AnnotationMBeanExporter Registering beans for JMX exposure on startup
+07-10-2016 17:02:31.489 [main] INFO  Http11NioProtocol Initializing ProtocolHandler ["http-nio-8081"]
+07-10-2016 17:02:31.502 [main] INFO  Http11NioProtocol Starting ProtocolHandler [http-nio-8081]
+07-10-2016 17:02:31.510 [main] ERROR Http11NioProtocol Failed to start end point associated with ProtocolHandler [http-nio-8081]
+java.net.BindException: La dirección ya se está usando
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:463)
+	at sun.nio.ch.Net.bind(Net.java:455)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:229)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:874)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:573)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1035)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:152)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:234)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:179)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:544)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:369)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:313)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1185)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1174)
+	at com.opticas.OpticasApplication.main(OpticasApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:50)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:58)
+07-10-2016 17:02:31.511 [main] ERROR StandardService Failed to start connector [Connector[HTTP/1.1-8081]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8081]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:158)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:234)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:179)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:544)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:369)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:313)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1185)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1174)
+	at com.opticas.OpticasApplication.main(OpticasApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:50)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:58)
+Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1042)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:152)
+	... 21 common frames omitted
+Caused by: java.net.BindException: La dirección ya se está usando
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:463)
+	at sun.nio.ch.Net.bind(Net.java:455)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:229)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:874)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:573)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1035)
+	... 22 common frames omitted
+07-10-2016 17:02:31.521 [main] INFO  Http11NioProtocol Pausing ProtocolHandler ["http-nio-8081"]
+07-10-2016 17:02:31.521 [main] INFO  StandardService Stopping service Tomcat
+07-10-2016 17:02:31.535 [localhost-startStop-1] WARN  WebappClassLoaderBase The web application [ROOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+07-10-2016 17:02:31.555 [main] INFO  LifecycleBase The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+07-10-2016 17:02:31.555 [main] INFO  Http11NioProtocol Stopping ProtocolHandler ["http-nio-8081"]
+07-10-2016 17:02:31.555 [main] INFO  Http11NioProtocol Destroying ProtocolHandler ["http-nio-8081"]
+07-10-2016 17:02:31.560 [main] INFO  AutoConfigurationReportLoggingInitializer 
+
+Error starting ApplicationContext. To display the auto-configuration report enable debug logging (start with --debug)
+
+
+07-10-2016 17:02:31.577 [main] ERROR LoggingFailureAnalysisReporter 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Embedded servlet container failed to start. Port 8081 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8081 or configure this application to listen on another port.
+
+07-10-2016 17:02:31.578 [main] INFO  AnnotationConfigEmbeddedWebApplicationContext Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@24245514: startup date [Fri Oct 07 17:02:26 UTC 2016]; root of context hierarchy
+07-10-2016 17:02:31.580 [main] INFO  AnnotationMBeanExporter Unregistering JMX-exposed beans on shutdown
